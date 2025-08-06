@@ -1,0 +1,148 @@
+.login-register-auth-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafb;
+  color: #0f172a;
+  min-height: 100vh;
+  padding-top: 60px; /* Reduced padding to account for smaller navbar */
+}
+
+.login-register-auth-box {
+  width: 100%;
+  max-width: 500px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.login-register-auth-toggle {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.login-register-auth-toggle button {
+  flex: 1;
+  padding: 12px 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: #475569; /* updated */
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.login-register-auth-toggle button:hover {
+  color: #ffcb9b;
+}
+
+.login-register-active-tab {
+  color: #0f172a !important;
+  border-bottom: 2px solid #ffcb9b !important;
+}
+
+.login-register-login-form,
+.login-register-register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-register-form-title,
+.form-title {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 25px;
+  color: #0f172a; /* updated */
+}
+
+.login-register-login-form input,
+.login-register-register-form input,
+.login-register-register-form textarea {
+  width: 100%;
+  padding: 10px 14px;
+  margin-bottom: 15px;
+  border: 1px solid #cbd5e1; /* updated */
+  border-radius: 10px;
+  font-size: 15px;
+  box-sizing: border-box;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.login-register-login-form input:focus,
+.login-register-register-form input:focus,
+.login-register-register-form textarea:focus {
+  border-color: #ffcb9b;
+}
+
+.login-register-register-form textarea {
+  resize: none;
+  height: 80px;
+}
+
+.login-register-submit-btn {
+  width: 100%;
+  padding: 12px 0;
+  background-color: #0f2644; /* updated */
+  border: none;
+  border-radius: 15px;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.login-register-submit-btn:hover {
+  background-color: #ffffff;
+  color: #0f2644;
+  border: 1px solid #0f2644;
+}
+.forgot-password-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.forgot-password-form h2 {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 25px;
+  color: #0f172a;
+}
+
+.forgot-password-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.forgot-password-form input {
+  width: 100%;
+  padding: 10px 14px;
+  margin-bottom: 15px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font-size: 15px;
+  box-sizing: border-box;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.forgot-password-form input:focus {
+  border-color: #ffcb9b;
+}
+
+.forgot-password-link {
+  color: #007bff;
+  margin-top: 10px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.forgot-password-link:hover {
+  color: #0056b3;
+}
