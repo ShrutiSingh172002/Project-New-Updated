@@ -21,6 +21,9 @@ const Navbar = () => {
         <span className="navbar-link" onClick={() => navigate("/services")}>
           Services
         </span>
+        <span className="navbar-link" onClick={() => navigate("/about")}>
+          About Us
+        </span>
         <span className="navbar-link" onClick={() => navigate("/contact")}>
           Contact Us
         </span>

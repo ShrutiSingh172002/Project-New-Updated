@@ -133,33 +133,7 @@ const Products = () => {
       <footer className="footer-audit-paragraph">
         <div className="footer-content">
           <div className="footer-section">
-            <h3 className="footer-heading">Shaft & Seal</h3>
-            <p className="footer-description">
-              Engineering reliability, minimizing inventory, and maximizing efficiency 
-              for industries worldwide.
-            </p>
-          </div>
-          
-          <div className="footer-section">
-            <h3 className="footer-heading">Quick Links</h3>
-            <div className="footer-links">
-              <div className="footer-link" onClick={() => { navigate("/about"); window.scrollTo(0, 0); }}>
-                <span>About Us</span>
-              </div>
-              <div className="footer-link" onClick={() => { navigate("/contact"); window.scrollTo(0, 0); }}>
-                <span>Contact</span>
-              </div>
-              <div className="footer-link" onClick={() => { navigate("/terms"); window.scrollTo(0, 0); }}>
-                <span>Terms & Conditions</span>
-              </div>
-              <div className="footer-link" onClick={() => { navigate("/privacy"); window.scrollTo(0, 0); }}>
-                <span>Privacy Policy</span>
-              </div>
-            </div>
-          </div>
-          
-          <div className="footer-section">
-            <h3 className="footer-heading">Social Handles</h3>
+            <h3 className="footer-heading">Connect With Us</h3>
             <div className="social-icons">
               <a
                 href="https://youtube.com/@shaftnseal?si=rdVfDZ7qPpfzzHxS"

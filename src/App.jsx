@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import SalesContainer from "./Website/SalesContainer";
 import EnergySavingExpertise from "./Website/EnergySavingExpertise";
 import ReliableRebuilds from "./Website/ReliableRebuilds";
@@ -24,16 +24,19 @@ function App() {
         <Route path="/" element={<SalesContainer />} />
         <Route
           path="/energy-saving-expertise"
-          element={<EnergySavingExpertise />}
+          element={<Navigate to="/services" replace />}
         />
-        <Route path="/reliable-rebuilds" element={<ReliableRebuilds />} />
+        <Route
+          path="/reliable-rebuilds"
+          element={<Navigate to="/services" replace />}
+        />
         <Route
           path="/precision-pump-repair"
-          element={<PrecisionPumpRepair />}
+          element={<Navigate to="/Products"replace  />}
         />
         <Route
           path="/reverse-engineering"
-          element={<ReverseEngineeringPage />}
+          element={<Navigate to="/Products"replace />}
         />
         <Route path="/energy-saving" element={<EnergySavingPage />} />
         <Route path="/energy-audit" element={<EnergyAudit />} />
