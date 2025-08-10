@@ -1,8 +1,7 @@
-.about-us-login {
-  background-color: #f9fafb;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.about-container {
+  font-family: 'Segoe UI', sans-serif;
   color: #0f172a;
-  padding-top: 60px; /* Reduced padding to account for smaller navbar */
+  padding-top: 160px; /* Increased padding to account for navbar height (120px logo + 20px padding + 20px margin) */
 }
 
 /* Banner Header (Logo + Info) */
@@ -413,6 +412,104 @@
   }
   
   .vision-content p {
+    font-size: 16px;
+  }
+}
+
+/* Footer Styles */
+.footer-audit-paragraph {
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+  color: white;
+  padding: 20px 0 10px 0;
+  border-top: 3px solid #fbbf24;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  min-height: 80px;
+}
+
+.footer-copyright-left {
+  flex-shrink: 0;
+}
+
+.footer-copyright-text {
+  margin: 0;
+  font-size: 20px;
+  color: #cbd5e1;
+  font-weight: 600;
+}
+
+.footer-social-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.footer-heading {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #fbbf24;
+  display: inline-block;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.social-icons a {
+  color: #e2e8f0;
+  font-size: 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.social-icons a:hover {
+  color: #fbbf24;
+  background-color: rgba(251, 191, 36, 0.2);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(251, 191, 36, 0.3);
+}
+
+/* Footer Responsive */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 15px;
+    text-align: center;
+  }
+  
+  .footer-copyright-left {
+    order: 2;
+  }
+  
+  .footer-social-section {
+    order: 1;
+    align-items: center;
+  }
+  
+  .footer-copyright-text {
     font-size: 16px;
   }
 }

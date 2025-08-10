@@ -32,11 +32,11 @@ function App() {
         />
         <Route
           path="/precision-pump-repair"
-          element={<Navigate to="/Products"replace  />}
+          element={<Navigate to="/Products" replace />}
         />
         <Route
           path="/reverse-engineering"
-          element={<Navigate to="/Products"replace />}
+          element={<Navigate to="/Products" replace />}
         />
         <Route path="/energy-saving" element={<EnergySavingPage />} />
         <Route path="/energy-audit" element={<EnergyAudit />} />

@@ -6,7 +6,18 @@ import {
   FaYoutube,
   FaInstagram,
   FaFacebook,
+  FaSearch,
+  FaTools,
+  FaBolt,
 } from "react-icons/fa";
+import { 
+  GiGears, 
+  GiMechanicalArm 
+} from "react-icons/gi";
+import { 
+  MdEngineering, 
+  MdBuild 
+} from "react-icons/md";
 
 const Services = () => {
   const navigate = useNavigate();
@@ -29,7 +40,9 @@ const Services = () => {
           
           {/* Reverse Engineering */}
           <div className="service-card">
-            <div className="service-icon">🔬</div>
+            <div className="service-icon">
+              <FaSearch className="icon-svg" />
+            </div>
             <h3>Reverse Engineering</h3>
             <p>Complete reverse engineering of pump components using advanced CAD/CAM technology and precision metrology.</p>
             <div className="service-features">
@@ -45,7 +58,9 @@ const Services = () => {
 
           {/* Precision Pump Repair */}
           <div className="service-card">
-            <div className="service-icon">🔧</div>
+            <div className="service-icon">
+              <FaTools className="icon-svg" />
+            </div>
             <h3>Precision Pump Repair</h3>
             <p>Expert repair services for industrial pumps with focus on restoring original performance and efficiency.</p>
             <div className="service-features">
@@ -61,7 +76,9 @@ const Services = () => {
 
           {/* Energy Efficiency Audits */}
           <div className="service-card">
-            <div className="service-icon">⚡</div>
+            <div className="service-icon">
+              <FaBolt className="icon-svg" />
+            </div>
             <h3>Energy Efficiency Audits & Implementations</h3>
             <p>Comprehensive energy audits to identify optimization opportunities and reduce operational costs.</p>
             <div className="service-features">
@@ -84,13 +101,13 @@ const Services = () => {
       {/* Footer */}
       <footer className="footer-audit-paragraph">
         <div className="footer-content">
-          <div className="footer-section">
-            <div className="company-watermark">
-              <img src="/logo.jpg" alt="Shaft & Seal" className="footer-logo" />
-            </div>
+          <div className="footer-copyright-left">
+            <p className="footer-copyright-text">
+              © 2025 Shaft & Seal. All rights reserved.
+            </p>
           </div>
           
-          <div className="footer-section">
+          <div className="footer-social-section">
             <h3 className="footer-heading">Connect With Us</h3>
             <div className="social-icons">
               <a href="https://youtube.com/@shaftnseal?si=rdVfDZ7qPpfzzHxS" target="_blank" rel="noopener noreferrer" title="YouTube">
@@ -107,12 +124,6 @@ const Services = () => {
               </a>
             </div>
           </div>
-        </div>
-        
-        <div className="footer-copyright">
-          <p className="footer-content-para">
-            © 2025 Shaft & Seal. All rights reserved.
-          </p>
         </div>
       </footer>
     </div>

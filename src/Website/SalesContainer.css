@@ -2,7 +2,7 @@
   font-family: 'Segoe UI', sans-serif;
   color: #0f172a;
   background-color: #f9fafb;
-  padding-top: 60px; /* Reduced padding to account for smaller navbar */
+  padding-top: 160px; /* Increased padding to account for navbar height (120px logo + 20px padding + 20px margin) */
 }
 
 /* Remove old navbar styles since we're using shared navbar */

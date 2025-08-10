@@ -1,9 +1,7 @@
-.privacy-container {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f9fafb;
+.privacy-policy-container {
+  font-family: 'Segoe UI', sans-serif;
   color: #0f172a;
-  min-height: 100vh;
-  padding-top: 60px; /* Reduced padding to account for smaller navbar */
+  padding-top: 160px; /* Increased padding to account for navbar height (120px logo + 20px padding + 20px margin) */
 }
 
 /* Remove old header styles since we're using shared navbar */

@@ -2,6 +2,7 @@
   max-width: 1600px;
   margin: 0 auto;
   padding: 30px 40px;
+  padding-top: 190px; /* Increased padding to account for navbar height (120px logo + 20px padding + 20px margin + 30px original padding) */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #0f172a;
   line-height: 1.7;

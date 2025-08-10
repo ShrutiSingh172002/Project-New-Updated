@@ -6,7 +6,21 @@ import {
   FaYoutube,
   FaInstagram,
   FaFacebook,
+  FaCogs,
+  FaIndustry,
+  FaTools,
+  FaCog,
+  FaWater,
 } from "react-icons/fa";
+import { 
+  GiGears, 
+  GiMechanicalArm 
+} from "react-icons/gi";
+import { 
+  MdPrecisionManufacturing, 
+  MdEngineering, 
+  MdBuild 
+} from "react-icons/md";
 
 const Products = () => {
   const navigate = useNavigate();
@@ -29,8 +43,10 @@ const Products = () => {
           
           {/* Pump Spares */}
           <div className="product-card">
-            <div className="product-icon">🔧</div>
-            <h3>Pump Spares </h3>
+            <div className="product-icon">
+              <GiGears className="icon-svg" />
+            </div>
+            <h3>Pump Spares</h3>
             <p>Precision-engineered pump spares including impellers, wear rings, shaft sleeves, and casings for various industrial applications.</p>
             <div className="product-features">
               <div className="feature">✓ OEM Standard Quality</div>
@@ -42,9 +58,11 @@ const Products = () => {
             </button>
           </div>
 
-          {/* Boiler Feed Pump Components */}
+          {/* Centrifugal Pumps */}
           <div className="product-card">
-            <div className="product-icon">⚡</div>
+            <div className="product-icon">
+              <FaWater className="icon-svg" />
+            </div>
             <h3>Centrifugal Pumps</h3>
             <p>Specialized components for high-pressure boiler feed pumps, designed for optimal performance and efficiency in power plants.</p>
             <div className="product-features">
@@ -57,10 +75,12 @@ const Products = () => {
             </button>
           </div>
 
-          {/* Condensate Pump Parts */}
+          {/* Allied Products */}
           <div className="product-card">
-            <div className="product-icon">💧</div>
-            <h3> Allied Products</h3>
+            <div className="product-icon">
+              <MdPrecisionManufacturing className="icon-svg" />
+            </div>
+            <h3>Allied Products</h3>
             <p>Reliable condensate pump components for steam power systems, ensuring efficient condensate return and system reliability.</p>
             <div className="product-features">
               <div className="feature">✓ Steam Resistant</div>
@@ -72,23 +92,19 @@ const Products = () => {
             </button>
           </div>
 
-          
-
         </div>
       </div>
-
-      
 
       {/* Footer */}
       <footer className="footer-audit-paragraph">
         <div className="footer-content">
-          <div className="footer-section">
-            <div className="company-watermark">
-              <img src="/logo.jpg" alt="Shaft & Seal" className="footer-logo" />
-            </div>
+          <div className="footer-copyright-left">
+            <p className="footer-copyright-text">
+              © 2025 Shaft & Seal. All rights reserved.
+            </p>
           </div>
           
-          <div className="footer-section">
+          <div className="footer-social-section">
             <h3 className="footer-heading">Connect With Us</h3>
             <div className="social-icons">
               <a href="https://youtube.com/@shaftnseal?si=rdVfDZ7qPpfzzHxS" target="_blank" rel="noopener noreferrer" title="YouTube">
@@ -105,12 +121,6 @@ const Products = () => {
               </a>
             </div>
           </div>
-        </div>
-        
-        <div className="footer-copyright">
-          <p className="footer-content-para">
-            © 2025 Shaft & Seal. All rights reserved.
-          </p>
         </div>
       </footer>
     </div>

@@ -165,13 +165,13 @@ const ContactUs = () => {
         {/* Footer */}
         <footer className="footer-audit-paragraph">
           <div className="footer-content">
-            <div className="footer-section">
-              <div className="company-watermark">
-                <img src="/logo.jpg" alt="Shaft & Seal" className="footer-logo" />
-              </div>
+            <div className="footer-copyright-left">
+              <p className="footer-copyright-text">
+                © 2025 Shaft & Seal. All rights reserved.
+              </p>
             </div>
             
-            <div className="footer-section">
+            <div className="footer-social-section">
               <h3 className="footer-heading">Connect With Us</h3>
               <div className="social-icons">
                 <a href="https://youtube.com/@shaftnseal?si=rdVfDZ7qPpfzzHxS" target="_blank" rel="noopener noreferrer" title="YouTube">
@@ -188,12 +188,6 @@ const ContactUs = () => {
                 </a>
               </div>
             </div>
-          </div>
-          
-          <div className="footer-copyright">
-            <p className="footer-content-para">
-              © 2025 Shaft & Seal. All rights reserved.
-            </p>
           </div>
         </footer>
     </div>
