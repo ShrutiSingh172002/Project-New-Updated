@@ -2,10 +2,13 @@ import React from "react";
 import { FaYoutube, FaInstagram, FaFacebook, FaTwitter, FaArrowLeft } from "react-icons/fa";
 import "./EnergyAudit.css";
 import { useNavigate } from "react-router-dom";
+import Navbar from "./Navbar";
+
 const EnergyAudit = () => {
    const navigate = useNavigate();
   return (
     <div className="energy-audit-container">
+      <Navbar />
        <div className="back-arrow" onClick={() => navigate("/")}>
         <FaArrowLeft />
         <span>Back</span>
@@ -60,44 +63,40 @@ const EnergyAudit = () => {
 
       <p className="audit-paragraph">That’s the Shaft & Seal advantage.</p>
 
-     <footer className="footer-audit-paragraph">
-           <div className="footer-content">
-             <p className="footer-content-para">
-               © 2025 Shaft & Seal. All rights reserved.
-             </p>
-             <div className="social-icons">
-               <a
-                 href="https://youtube.com/@shaftnseal?si=rdVfDZ7qPpfzzHxS"
-                 target="_blank"
-                 rel="noopener noreferrer"
-               >
-                 <FaYoutube />
-               </a>
-               <a
-                 href="https://www.youtube.com/@shaftnseal"
-                 target="_blank"
-                 rel="noopener noreferrer"
-               >
-                 <FaInstagram />
-               </a>
-               <a
-                 href="https://www.facebook.com/profile.php?id=61578595061965"
-                 target="_blank"
-                 rel="noopener noreferrer"
-               >
-                 <FaFacebook />
-               </a>
-               <a
-                 href="https://x.com/ShaftnSeal"
-                 target="_blank"
-                 rel="noopener noreferrer"
-                 className="x-link-text"
-               >
-                 x
-               </a>
-             </div>
-           </div>
-         </footer>
+        {/* Footer */}
+        <footer className="footer-audit-paragraph">
+          <div className="footer-content">
+            <div className="footer-section">
+              <div className="company-watermark">
+                <img src="/logo.jpg" alt="Shaft & Seal" className="footer-logo" />
+              </div>
+            </div>
+            
+            <div className="footer-section">
+              <h3 className="footer-heading">Connect With Us</h3>
+              <div className="social-icons">
+                <a href="https://youtube.com/@shaftnseal?si=rdVfDZ7qPpfzzHxS" target="_blank" rel="noopener noreferrer" title="YouTube">
+                  <FaYoutube />
+                </a>
+                <a href="https://www.youtube.com/@shaftnseal" target="_blank" rel="noopener noreferrer" title="Instagram">
+                  <FaInstagram />
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61578595061965" target="_blank" rel="noopener noreferrer" title="Facebook">
+                  <FaFacebook />
+                </a>
+                <a href="https://x.com/ShaftnSeal" target="_blank" rel="noopener noreferrer" title="Twitter" className="x-link-text">
+                  x
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div className="footer-copyright">
+            <p className="footer-content-para">
+              © 2025 Shaft & Seal. All rights reserved.
+            </p>
+          </div>
+        </footer>
 
     </div>
   );

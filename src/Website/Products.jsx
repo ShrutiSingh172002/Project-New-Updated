@@ -30,7 +30,7 @@ const Products = () => {
           {/* Pump Spares */}
           <div className="product-card">
             <div className="product-icon">🔧</div>
-            <h3>Pump Spares & Components</h3>
+            <h3>Pump Spares </h3>
             <p>Precision-engineered pump spares including impellers, wear rings, shaft sleeves, and casings for various industrial applications.</p>
             <div className="product-features">
               <div className="feature">✓ OEM Standard Quality</div>
@@ -45,7 +45,7 @@ const Products = () => {
           {/* Boiler Feed Pump Components */}
           <div className="product-card">
             <div className="product-icon">⚡</div>
-            <h3>Boiler Feed Pump Components</h3>
+            <h3>Centrifugal Pumps</h3>
             <p>Specialized components for high-pressure boiler feed pumps, designed for optimal performance and efficiency in power plants.</p>
             <div className="product-features">
               <div className="feature">✓ High-Pressure Rating</div>
@@ -53,14 +53,14 @@ const Products = () => {
               <div className="feature">✓ Corrosion Resistant</div>
             </div>
             <button className="product-btn" onClick={() => navigate("/contact")}>
-              Get Quote
+              Learn More
             </button>
           </div>
 
           {/* Condensate Pump Parts */}
           <div className="product-card">
             <div className="product-icon">💧</div>
-            <h3>Condensate Pump Parts</h3>
+            <h3> Allied Products</h3>
             <p>Reliable condensate pump components for steam power systems, ensuring efficient condensate return and system reliability.</p>
             <div className="product-features">
               <div className="feature">✓ Steam Resistant</div>
@@ -68,111 +68,46 @@ const Products = () => {
               <div className="feature">✓ Maintenance Friendly</div>
             </div>
             <button className="product-btn" onClick={() => navigate("/contact")}>
-              Get Quote
+              Learn More
             </button>
           </div>
 
-          {/* Industrial Pump Solutions */}
-          <div className="product-card">
-            <div className="product-icon">🏭</div>
-            <h3>Industrial Pump Solutions</h3>
-            <p>Complete pump solutions for chemical, petrochemical, and manufacturing industries with custom engineering capabilities.</p>
-            <div className="product-features">
-              <div className="feature">✓ Chemical Compatible</div>
-              <div className="feature">✓ Custom Engineering</div>
-              <div className="feature">✓ Industry Certified</div>
-            </div>
-            <button className="product-btn" onClick={() => navigate("/contact")}>
-              Get Quote
-            </button>
-          </div>
-
-          {/* Replacement Parts */}
-          <div className="product-card">
-            <div className="product-icon">🔄</div>
-            <h3>Replacement Parts</h3>
-            <p>Replacement parts for obsolete and discontinued pump models, extending equipment life and maintaining operational efficiency.</p>
-            <div className="product-features">
-              <div className="feature">✓ Obsolete Model Support</div>
-              <div className="feature">✓ Reverse Engineered</div>
-              <div className="feature">✓ Cost Effective</div>
-            </div>
-            <button className="product-btn" onClick={() => navigate("/contact")}>
-              Get Quote
-            </button>
-          </div>
-
-          {/* Energy Efficient Components */}
-          <div className="product-card">
-            <div className="product-icon">🌱</div>
-            <h3>Energy Efficient Components</h3>
-            <p>Optimized pump components designed to reduce energy consumption and improve overall system efficiency.</p>
-            <div className="product-features">
-              <div className="feature">✓ Energy Savings</div>
-              <div className="feature">✓ Performance Optimized</div>
-              <div className="feature">✓ ROI Focused</div>
-            </div>
-            <button className="product-btn" onClick={() => navigate("/contact")}>
-              Get Quote
-            </button>
-          </div>
+          
 
         </div>
       </div>
 
-      {/* CTA Section */}
-      <div className="products-cta">
-        <h2>Need Custom Solutions?</h2>
-        <p>Our engineering team can design and manufacture custom components to meet your specific requirements.</p>
-        <button className="cta-btn" onClick={() => navigate("/contact")}>
-          Contact Our Engineers
-        </button>
-      </div>
+      
 
       {/* Footer */}
       <footer className="footer-audit-paragraph">
         <div className="footer-content">
           <div className="footer-section">
+            <div className="company-watermark">
+              <img src="/logo.jpg" alt="Shaft & Seal" className="footer-logo" />
+            </div>
+          </div>
+          
+          <div className="footer-section">
             <h3 className="footer-heading">Connect With Us</h3>
             <div className="social-icons">
-              <a
-                href="https://youtube.com/@shaftnseal?si=rdVfDZ7qPpfzzHxS"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="YouTube"
-              >
+              <a href="https://youtube.com/@shaftnseal?si=rdVfDZ7qPpfzzHxS" target="_blank" rel="noopener noreferrer" title="YouTube">
                 <FaYoutube />
               </a>
-              <a
-                href="https://www.youtube.com/@shaftnseal "
-                target="_blank"
-                rel="noopener noreferrer"
-                title="Instagram"
-              >
+              <a href="https://www.youtube.com/@shaftnseal" target="_blank" rel="noopener noreferrer" title="Instagram">
                 <FaInstagram />
               </a>
-              <a
-                href="https://www.facebook.com/profile.php?id=61578595061965"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="Facebook"
-              >
+              <a href="https://www.facebook.com/profile.php?id=61578595061965" target="_blank" rel="noopener noreferrer" title="Facebook">
                 <FaFacebook />
               </a>
-              <a
-                href="https://x.com/ShaftnSeal"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="Twitter"
-                className="x-link-text"
-              >
+              <a href="https://x.com/ShaftnSeal" target="_blank" rel="noopener noreferrer" title="Twitter" className="x-link-text">
                 x
               </a>
             </div>
           </div>
         </div>
         
-        <div className="footer-bottom">
+        <div className="footer-copyright">
           <p className="footer-content-para">
             © 2025 Shaft & Seal. All rights reserved.
           </p>
