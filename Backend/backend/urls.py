@@ -15,13 +15,32 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path,include
+from django.urls import path, include
+from django.http import HttpResponse
+# from rest_framework_simplejwt.views import (
+#     TokenObtainPairView,
+#     TokenRefreshView,
+#     TokenVerifyView,
+# )
+
+def home(request):
+    return HttpResponse("""
+    <h1>Welcome to Your Django Project!</h1>
+    <p>The server is running successfully.</p>
+    <ul>
+        <li><a href="/admin/">Admin Panel</a></li>
+        <li><a href="/api/accounts/">Accounts API</a></li>
+        <!-- <li><a href="/api/auth/">Auth API</a></li> -->
+        <!-- <li><a href="/api/token/">Get JWT Token</a></li> -->
+    </ul>
+    """)
 
 urlpatterns = [
+    path('', home, name='home'),
     path('admin/', admin.site.urls),
-    
     path('api/accounts/', include('accounts.urls')), 
-    path('api/auth/', include('djoser.urls')),  # for login
-    path('api/auth/', include('djoser.urls.jwt')),  # for JWT login
-    
+    # path('api/auth/', include('djoser.urls')), 
+    # path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
+    # path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
+    # path('api/token/verify/', TokenVerifyView.as_view(), name='token_verify'),
 ]
